@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UI.TabTest">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="961" height="400"/>
+    </constraints>
+    <properties>
+      <preferredSize width="800" height="400"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="a3b34" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <alignmentX value="0.5"/>
+          <font size="16"/>
+          <requestFocusEnabled value="true"/>
+          <tabLayoutPolicy value="0"/>
+          <tabPlacement value="4"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="97729" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="فروشگاه"/>
+            </constraints>
+            <properties>
+              <alignmentX value="0.5"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <tabbedpane id="4f219" binding="storeTab">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="200" height="200"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <font size="16"/>
+                  <visible value="true"/>
+                </properties>
+                <clientProperties>
+                  <html.disable class="java.lang.Boolean" value="false"/>
+                </clientProperties>
+                <border type="none"/>
+                <children>
+                  <grid id="3900" binding="storeTabSelect" layout-manager="GridLayoutManager" row-count="5" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="20" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="انتخاب فروشگاه" icon="Image/List-tab-Light.png"/>
+                    </constraints>
+                    <properties>
+                      <autoscrolls value="false"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <scrollpane id="af58e">
+                        <constraints>
+                          <grid row="0" column="3" row-span="3" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="f2b11" class="javax.swing.JList" binding="list_storeName">
+                            <constraints/>
+                            <properties>
+                              <focusable value="false"/>
+                              <font size="16"/>
+                              <model/>
+                              <selectionMode value="0"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </scrollpane>
+                      <hspacer id="4e2e8">
+                        <constraints>
+                          <grid row="0" column="9" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <component id="a1d8a" class="javax.swing.JButton" binding="btn_deleteStore">
+                        <constraints>
+                          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="-1" height="35"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <enabled value="false"/>
+                          <font size="14"/>
+                          <horizontalTextPosition value="2"/>
+                          <icon value="Image/Remove-Light.png"/>
+                          <iconTextGap value="10"/>
+                          <pressedIcon value="Image/Remove-Bold.png"/>
+                          <text value="خذف"/>
+                        </properties>
+                      </component>
+                      <component id="af54" class="javax.swing.JButton" binding="btn_editStoreTap">
+                        <constraints>
+                          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                            <minimum-size width="-1" height="30"/>
+                            <preferred-size width="-1" height="35"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <alignmentY value="0.5"/>
+                          <autoscrolls value="false"/>
+                          <defaultCapable value="true"/>
+                          <enabled value="false"/>
+                          <font size="14"/>
+                          <hideActionText value="false"/>
+                          <horizontalTextPosition value="2"/>
+                          <icon value="Image/Edit-btn-Light.png"/>
+                          <iconTextGap value="10"/>
+                          <opaque value="true"/>
+                          <pressedIcon value="Image/Edit-btn-Bold.png"/>
+                          <selected value="false"/>
+                          <text value="ویرایش"/>
+                          <verifyInputWhenFocusTarget value="true"/>
+                          <visible value="true"/>
+                        </properties>
+                        <clientProperties>
+                          <hideActionText class="java.lang.Boolean" value="false"/>
+                          <html.disable class="java.lang.Boolean" value="false"/>
+                        </clientProperties>
+                      </component>
+                      <component id="436b6" class="javax.swing.JButton" binding="btn_selectStore">
+                        <constraints>
+                          <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="-1" height="35"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <enabled value="false"/>
+                          <font size="14"/>
+                          <horizontalTextPosition value="2"/>
+                          <icon value="Image/Select-Light.png"/>
+                          <iconTextGap value="10"/>
+                          <pressedIcon value="Image/Select-Bold.png"/>
+                          <text value="انتخاب"/>
+                        </properties>
+                      </component>
+                      <hspacer id="edb0e">
+                        <constraints>
+                          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <vspacer id="64c96">
+                        <constraints>
+                          <grid row="4" column="0" row-span="1" col-span="10" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </vspacer>
+                      <hspacer id="5ff1f">
+                        <constraints>
+                          <grid row="0" column="0" row-span="3" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <vspacer id="3a557">
+                        <constraints>
+                          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </vspacer>
+                      <component id="e7759" class="javax.swing.JButton" binding="btn_newStoreTab">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="-1" height="35"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="0"/>
+                          <horizontalTextPosition value="2"/>
+                          <icon value="Image/Add-Light.png"/>
+                          <iconTextGap value="10"/>
+                          <pressedIcon value="Image/Add-Bold.png"/>
+                          <text value="ثبت فروشگاه جدید"/>
+                        </properties>
+                      </component>
+                      <hspacer id="a2408">
+                        <constraints>
+                          <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <hspacer id="ec7a5">
+                        <constraints>
+                          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <hspacer id="c911">
+                        <constraints>
+                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                    </children>
+                  </grid>
+                  <grid id="8709f" binding="storeTabNew" layout-manager="GridLayoutManager" row-count="7" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="20" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="ثبت فروشگاه جدید"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="ff4b0" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16"/>
+                          <text value="نام فروشگاه"/>
+                        </properties>
+                      </component>
+                      <vspacer id="121f3">
+                        <constraints>
+                          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </vspacer>
+                      <component id="b6cb1" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16"/>
+                          <text value="نام"/>
+                        </properties>
+                      </component>
+                      <component id="d02ff" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16"/>
+                          <text value="نام خانوادگی"/>
+                        </properties>
+                      </component>
+                      <component id="18c54" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16"/>
+                          <text value="شماره تماس"/>
+                        </properties>
+                      </component>
+                      <component id="2e802" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16"/>
+                          <text value="ایمیل"/>
+                        </properties>
+                      </component>
+                      <component id="bd66a" class="javax.swing.JTextField" binding="tf_storeNew_storeName">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="4"/>
+                        </properties>
+                      </component>
+                      <hspacer id="99a62">
+                        <constraints>
+                          <grid row="0" column="0" row-span="5" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <component id="3f399" class="javax.swing.JTextField" binding="tf_storeNew_Name">
+                        <constraints>
+                          <grid row="1" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="4"/>
+                        </properties>
+                      </component>
+                      <component id="b1f7" class="javax.swing.JTextField" binding="tf_storeNew_Family">
+                        <constraints>
+                          <grid row="2" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="4"/>
+                        </properties>
+                      </component>
+                      <component id="48a63" class="javax.swing.JTextField" binding="tf_storeNew_Tell">
+                        <constraints>
+                          <grid row="3" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="4"/>
+                        </properties>
+                      </component>
+                      <component id="ce1c1" class="javax.swing.JTextField" binding="tf_storeNew_Mail">
+                        <constraints>
+                          <grid row="4" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="4"/>
+                        </properties>
+                      </component>
+                      <component id="b1ac1" class="javax.swing.JButton" binding="btn_insertNewStore">
+                        <constraints>
+                          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="-1" height="35"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalTextPosition value="2"/>
+                          <icon value="Image/Select-Light.png"/>
+                          <iconTextGap value="10"/>
+                          <pressedIcon value="Image/Select-Bold.png"/>
+                          <text value="ثبت فروشگاه جدید"/>
+                        </properties>
+                      </component>
+                      <component id="d8657" class="javax.swing.JLabel" binding="lbl_storeNew_storeName">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-65536"/>
+                          <text value="                                        "/>
+                        </properties>
+                      </component>
+                      <component id="48bd7" class="javax.swing.JLabel" binding="lbl_storeNew_Name">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-65536"/>
+                          <text value="                                        "/>
+                        </properties>
+                      </component>
+                      <component id="74e6e" class="javax.swing.JLabel" binding="lbl_storeNew_Family">
+                        <constraints>
+                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-65536"/>
+                          <text value="                                        "/>
+                        </properties>
+                      </component>
+                      <component id="d87a" class="javax.swing.JLabel" binding="lbl_storeNew_Tell">
+                        <constraints>
+                          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-65536"/>
+                          <text value="                                        "/>
+                        </properties>
+                      </component>
+                      <component id="61ed6" class="javax.swing.JLabel" binding="lbl_storeNew_Mail">
+                        <constraints>
+                          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-65536"/>
+                          <text value="                                        "/>
+                        </properties>
+                      </component>
+                      <hspacer id="969d0">
+                        <constraints>
+                          <grid row="0" column="7" row-span="6" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <hspacer id="34ac6">
+                        <constraints>
+                          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <component id="bd971" class="javax.swing.JButton" binding="انصرافButton1" default-binding="true">
+                        <constraints>
+                          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="-1" height="35"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalTextPosition value="2"/>
+                          <icon value="Image/Cancel-Light.png"/>
+                          <iconTextGap value="10"/>
+                          <pressedIcon value="Image/Cancel-Bold.png"/>
+                          <text value="انصراف"/>
+                        </properties>
+                      </component>
+                      <hspacer id="c0b6d">
+                        <constraints>
+                          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                    </children>
+                  </grid>
+                  <grid id="14578" binding="storeTabEdit" layout-manager="GridLayoutManager" row-count="7" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="20" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <tabbedpane title="ویرایش" enabled="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.5"/>
+                      <doubleBuffered value="true"/>
+                      <enabled value="true"/>
+                      <opaque value="true"/>
+                      <requestFocusEnabled value="true"/>
+                      <verifyInputWhenFocusTarget value="true"/>
+                      <visible value="true"/>
+                    </properties>
+                    <border type="none"/>
+                    <children>
+                      <component id="cc42c" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16"/>
+                          <text value="نام فروشگاه"/>
+                        </properties>
+                      </component>
+                      <hspacer id="51cc3">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <vspacer id="29359">
+                        <constraints>
+                          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </vspacer>
+                      <hspacer id="58474">
+                        <constraints>
+                          <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <component id="870b0" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16"/>
+                          <text value="نام"/>
+                        </properties>
+                      </component>
+                      <component id="c0894" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16"/>
+                          <text value="نام خانوادگی"/>
+                        </properties>
+                      </component>
+                      <component id="f0beb" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16"/>
+                          <text value="شماره تماس"/>
+                          <toolTipText value="09xxxxxxxxx"/>
+                        </properties>
+                      </component>
+                      <component id="d16d8" class="javax.swing.JTextField" binding="tf_storeEdit_storeName">
+                        <constraints>
+                          <grid row="0" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="4"/>
+                        </properties>
+                      </component>
+                      <component id="a9a23" class="javax.swing.JTextField" binding="tf_storeEdit_Name">
+                        <constraints>
+                          <grid row="1" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="4"/>
+                        </properties>
+                      </component>
+                      <component id="7f947" class="javax.swing.JTextField" binding="tf_storeEdit_Family">
+                        <constraints>
+                          <grid row="2" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="4"/>
+                        </properties>
+                      </component>
+                      <component id="1400f" class="javax.swing.JTextField" binding="tf_storeEdit_Tell">
+                        <constraints>
+                          <grid row="3" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="4"/>
+                          <toolTipText value="09xxxxxxxxx"/>
+                        </properties>
+                      </component>
+                      <component id="9bf70" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="16"/>
+                          <text value="ایمیل"/>
+                        </properties>
+                      </component>
+                      <component id="22ed5" class="javax.swing.JTextField" binding="tf_storeEdit_Mail">
+                        <constraints>
+                          <grid row="4" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="150" height="-1"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="4"/>
+                        </properties>
+                      </component>
+                      <component id="37e2c" class="javax.swing.JButton" binding="btn_editStore">
+                        <constraints>
+                          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="-1" height="35"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalTextPosition value="2"/>
+                          <icon value="Image/Select-Light.png"/>
+                          <iconTextGap value="10"/>
+                          <pressedIcon value="Image/Select-Bold.png"/>
+                          <text value="ذخیره تغییرات"/>
+                        </properties>
+                      </component>
+                      <component id="66fc4" class="javax.swing.JLabel" binding="lbl_storeEdit_storeName">
+                        <constraints>
+                          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-65536"/>
+                          <text value="                                        "/>
+                        </properties>
+                      </component>
+                      <component id="e03" class="javax.swing.JLabel" binding="lbl_storeEdit_Name">
+                        <constraints>
+                          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-65536"/>
+                          <text value="                                        "/>
+                        </properties>
+                      </component>
+                      <component id="fe8d9" class="javax.swing.JLabel" binding="lbl_storeEdit_Family">
+                        <constraints>
+                          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-65536"/>
+                          <text value="                                        "/>
+                        </properties>
+                      </component>
+                      <component id="a6395" class="javax.swing.JLabel" binding="lbl_storeEdit_Tell">
+                        <constraints>
+                          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-65536"/>
+                          <text value="                                        "/>
+                          <toolTipText value="09xxxxxxxxx"/>
+                        </properties>
+                      </component>
+                      <component id="2ebf9" class="javax.swing.JLabel" binding="lbl_storeEdit_Mail">
+                        <constraints>
+                          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <foreground color="-65536"/>
+                          <text value="                                        "/>
+                        </properties>
+                      </component>
+                      <hspacer id="780bc">
+                        <constraints>
+                          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                      <component id="c105b" class="javax.swing.JButton" binding="انصرافButton" default-binding="true">
+                        <constraints>
+                          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                            <preferred-size width="-1" height="35"/>
+                          </grid>
+                        </constraints>
+                        <properties>
+                          <font size="14"/>
+                          <horizontalAlignment value="0"/>
+                          <horizontalTextPosition value="2"/>
+                          <icon value="Image/Cancel-Light.png"/>
+                          <iconTextGap value="10"/>
+                          <pressedIcon value="Image/Cancel-Bold.png"/>
+                          <text value="انصراف"/>
+                        </properties>
+                      </component>
+                      <hspacer id="653c8">
+                        <constraints>
+                          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                      </hspacer>
+                    </children>
+                  </grid>
+                </children>
+              </tabbedpane>
+            </children>
+          </grid>
+          <grid id="4799" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="محصولات"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="3fb2a" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="مشتری ها"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="4f01e" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="طرف حساب ها"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
