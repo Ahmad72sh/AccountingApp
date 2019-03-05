@@ -18,7 +18,7 @@ public class ConsoleTest {
 		CustomerRealService cr = ctx.getBean(CustomerRealService.class);
 		System.out.println(cr.getByName("ha"));
 		
-		StoreService ss = ctx.getBean(StoreService.class);
+		StoreService StoreService = ctx.getBean(StoreService.class);
 		Store store = ctx.getBean(Store.class);
 
 //		List<Store> s1 = ss.getAll();
